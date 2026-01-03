@@ -37,9 +37,11 @@ document.addEventListener('DOMContentLoaded', function(){
   if(stored === 'dark' || (!stored && prefersDark)) document.documentElement.classList.add('dark');
   function setTheme(dark){
     if(dark) document.documentElement.classList.add('dark'); else document.documentElement.classList.remove('dark');
-    if(themeToggle) themeToggle.setAttribute('aria-pressed', String(dark));
+      themeToggle.setAttribute('aria-pressed', String(dark));
     localStorage.setItem('theme', dark ? 'dark' : 'light');
   }
+    // Ensure ARIA state matches current theme on load
+    if(themeToggle) themeToggle.setAttribute('aria-pressed', String(document.documentElement.classList.contains('dark')));
   if(themeToggle) themeToggle.addEventListener('click', function(){ setTheme(!document.documentElement.classList.contains('dark')); });
 
   // Gallery lightbox
