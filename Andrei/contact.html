@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Website Trial</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Website Trial</h1>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="features.html" class="nav-link">Features</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container contact">
+      <h2>Contact</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Name
+          <input type="text" id="name" required>
+        </label>
+        <label for="email">Email
+          <input type="email" id="email" required>
+        </label>
+        <label for="message">Message
+          <textarea id="message" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send</button>
+        <div id="form-msg" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><small>&copy; 2026 Website Trial</small></div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

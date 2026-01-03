@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gallery — Website Trial</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Website Trial</h1>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="features.html" class="nav-link">Features</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container gallery">
+      <h2>Gallery</h2>
+      <div class="grid">
+        <button class="tile" data-src="https://picsum.photos/1200/800?random=21" aria-label="Open image 1"></button>
+        <button class="tile" data-src="https://picsum.photos/1200/800?random=22" aria-label="Open image 2"></button>
+        <button class="tile" data-src="https://picsum.photos/1200/800?random=23" aria-label="Open image 3"></button>
+        <button class="tile" data-src="https://picsum.photos/1200/800?random=24" aria-label="Open image 4"></button>
+      </div>
+      <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
+        <button class="close" aria-label="Close">✕</button>
+        <img src="" alt="" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><small>&copy; 2026 Website Trial</small></div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
